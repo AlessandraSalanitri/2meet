@@ -1,0 +1,43 @@
+/* index.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%; /* Ensure the body and HTML fill the full height */
+    font-family: 'Headland One', Arial, sans-serif; /* Set HeadlandOne as the default font */
+    line-height: 1.6; /* Improve readability */
+    background-color: #f4f4f4; /* Light background for consistency */
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+  }
+  
+  ul,
+  ol {
+    list-style: none; /* Remove list styles for unordered/ordered lists */
+  }
+  
+  button {
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Set pointer cursor for buttons */
+  }
+  
+  img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+  }
+  
+  /* General container class for layout */
+  .container {
+    width: 90%; /* Set default container width */
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+  }
+  

@@ -1,0 +1,98 @@
+.admin-events-table {
+  font-family: Arial, sans-serif;
+  max-width:100%;
+  margin: 0 auto;
+  padding: 20px; 
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-events-table h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.admin-events-table .add-event-button {
+  display: block;
+  margin: 20px auto; /* Align the button in the center */
+  background-color: #00a8ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-events-table .add-event-button:hover {
+  background-color: #007bb5;
+}
+
+.admin-events-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5%; /* spacing between subnav and table */
+}
+
+.admin-events-table th,
+.admin-events-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-events-table td {
+  vertical-align: middle; /*aligns vertically */
+}
+
+.admin-events-table tbody tr {
+  height: 50px; /*consistent height */
+}
+
+
+.admin-events-table th {
+  background-color: #f1f1f1;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.admin-events-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.admin-events-table .action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Centers the buttons horizontally */
+  align-items: center; /* Centers the buttons vertically */
+}
+
+.admin-events-table .action-buttons button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-events-table .action-buttons .modify-button {
+  background-color: #ffc107;
+  color: #2c3e50;
+}
+
+.admin-events-table .action-buttons .modify-button:hover {
+  background-color: #e0a800;
+}
+
+.admin-events-table .action-buttons .delete-button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.admin-events-table .action-buttons .delete-button:hover {
+  background-color: #cc0000;
+}

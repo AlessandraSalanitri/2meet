@@ -1,0 +1,81 @@
+/* Full-page container */
+.page-container {
+    position: relative;
+    min-height: 100vh; /* Ensure it occupies the full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-size: cover; /* Ensure the background covers the page */
+    background-position: center; /* Center the background image */
+    font-family: Arial, sans-serif; /* Set font */
+  }
+  
+  /* Main content styling */
+  .main-content {
+    text-align: center;
+    color: rgb(31, 45, 238);
+    margin-top: 10%;
+  }
+  
+/* Text with shadow effect */
+.heading {
+    font-size: 4rem; /* Large font size */
+    font-weight: bold; /* Bold text for emphasis */
+    text-transform: uppercase; /* Make text uppercase */
+    color: #ffd700; /* Main text color */
+    text-align: center; /* Center align the text */
+    text-shadow: 
+      5px 5px 8px rgba(0, 0, 0, 0.3), /* Subtle shadow offset */
+      -4px -4px 7px rgba(255, 255, 255, 0.2); /* Light glow effect */
+    margin-top: 2%; /* Add spacing from the top */
+    letter-spacing: 5px; /* Add some space between letters */
+  }
+
+  /* Sub-text styling */
+    .sub-text,
+    .description {
+    font-family: 'Headland One', Arial, sans-serif; /* Use HeadlandOne font */
+    font-size: 1.5rem; /* Adjust the font size */
+    color: #2c3e50; /* Keep the text white */
+    text-align: center; /* Align text to the center */
+    margin-top: 20px; /* Add spacing */
+    line-height: 2.4rem; /* Improve readability */
+    }
+
+  
+  /* Highlighted special text */
+  .special-text {
+    font-weight: bold;
+    font-size: 2.5rem; /* Make the special text stand out */
+    color: #ffd700; /* Gold color */
+    text-shadow: 
+    3px 3px 5px rgba(0, 0, 0, 0.3), /* Subtle shadow offset */
+    -4px -4px 7px rgba(255, 255, 255, 0.2); /* Light glow effect */
+  margin-top: 2%; /* Add spacing from the top */
+  letter-spacing: 5px; /* Add some space between letters */
+  }
+  
+  /* Description text */
+  .description {
+    font-size: 1.5rem;
+    margin-top: 30px; /* Add spacing */
+  }
+  
+  /* Link button */
+  .link {
+    text-decoration: none;
+    color: #ffd700; /* Cyan color */
+    font-weight: bold;
+    font-size: 1.8rem; /* Increase link size */
+    border: 2px solid #2c3e50; /* Add border */
+    padding: 10px 20px; /* Add padding for a button-like look */
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s; /* Smooth hover transition */
+  }
+  
+  .link:hover {
+    background-color: #ffd700; /* Cyan background on hover */
+    color: #2c3e50; /* Dark text color */
+  }
+  

@@ -1,0 +1,105 @@
+.event-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 800px;
+  max-height: 90%; /* Prevent overflow by setting a max height */
+  overflow-y: auto; /* Enable scrolling when content overflows */
+  z-index: 1100;
+}
+
+.event-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dimmed overlay */
+  z-index: 1099; /* Just below the modal */
+}
+
+
+.event-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event-modal h3 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.event-modal input,
+.event-modal textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.event-modal select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  cursor: pointer;
+}
+
+.event-modal select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a blue glow on focus */
+}
+
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.modal-buttons button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-button {
+  background-color: #00a8ff;
+  color: white;
+  border: none;
+}
+
+.confirm-button:hover {
+  background-color: #007bb5;
+}
+
+.cancel-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+}
+
+.cancel-button:hover {
+  background-color: #cc0000;
+}
+
+/* Add spacing to prevent buttons from being too close */
+.modal-buttons button + button {
+  margin-left: 10px;
+}

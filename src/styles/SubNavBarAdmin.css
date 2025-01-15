@@ -1,0 +1,42 @@
+.subnav-admin {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 13% 4% 1%; 
+  padding: 20px; 
+  background-color: #f8f9fa; 
+  border-radius: 30px; 
+  max-width: 1600%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.subnav-admin button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e9ecef; 
+  color: #495057; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subnav-admin button.active {
+  background-color: #007bff; /* active button blue */
+  color: #fff;
+  font-weight: bold;
+}
+
+.subnav-admin button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.subnav-admin .add-event-mode-toggle.active {
+  background-color: #28a745;
+  color: white;
+}
+
+
+
+

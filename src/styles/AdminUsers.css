@@ -1,0 +1,340 @@
+.password-field {
+  position: relative;
+  display: flex;
+}
+
+.password-field input {
+  flex: 1;
+}
+
+.password-field .toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #00a8ff;
+  margin-left: 5px;
+}
+
+.is-admin-label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 5px;
+}
+
+/* General Styles */
+.admin-users {
+  font-family: Arial, sans-serif;
+  padding: 10%;
+  max-width: 1600px;
+  margin-top: 40px; 
+  margin: 0 auto;
+}
+
+.admin-users h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Add User Section */
+.add-user-section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.add-user-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.add-user-section .input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.add-user-section .input-group label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.add-user-section .input-icon {
+  position: relative;
+}
+
+.add-user-section .input-icon input {
+  width: 100%;
+  padding: 10px 15px;
+  padding-right: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.add-user-section .input-icon span.icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.add-user-section input:focus {
+  border-color: #007bff;
+}
+
+.add-user-section .password-field {
+  display: flex;
+  align-items: center;
+}
+
+.add-user-section .password-field input {
+  flex: 1;
+}
+
+.add-user-section .toggle-password {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.add-user-section .toggle-password:hover {
+  text-decoration: underline;
+}
+
+.add-user-section .is-admin-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.add-user-section .buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.add-user-section button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-user-section button:hover {
+  opacity: 0.9;
+}
+
+.add-user-section .add-user-btn {
+  background-color: #28a745;
+}
+
+.add-user-section .add-user-btn:hover {
+  background-color: #218838;
+}
+
+.add-user-section .clear-btn {
+  background-color: #dc3545;
+}
+
+.add-user-section .clear-btn:hover {
+  background-color: #c82333;
+}
+
+/* Users Table */
+.users-table {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.users-table h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.users-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.users-table th {
+  background-color: #f1f1f1;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.users-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.users-table td button {
+  margin-right: 5px;
+  background-color: #00a8ff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.users-table td button:hover {
+  background-color: #007bb5;
+}
+
+.users-table td button:last-child {
+  background-color: #ff4d4d;
+}
+
+.users-table td button:last-child:hover {
+  background-color: #cc0000;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content label {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.modal-content label input {
+  margin-right: 10px;
+}
+
+.modal-content .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.modal-content button {
+  background-color: #00a8ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #007bb5;
+}
+
+.modal-content button:last-child {
+  background-color: #ff4d4d;
+}
+
+.modal-content button:last-child:hover {
+  background-color: #cc0000;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .add-user-section,
+  .users-table {
+    padding: 15px;
+  }
+
+  .add-user-section input,
+  .modal-content input {
+    font-size: 0.9rem;
+  }
+
+  .modal-content button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+
+.go-back-button {
+  display: inline-block;
+  margin-top: 20px; /* Add space between the button and the table */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.go-back-button:hover {
+  background-color: #0056b3;
+}
