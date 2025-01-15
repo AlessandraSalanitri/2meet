@@ -1,20 +1,33 @@
 # React + Vite
-npm install
 
-Key Dependencies used in this project:
+<b>npm install</b>
+
+# Key Dependencies used in this project:
+
 •	React: For building the user interface.
 •	React Router DOM: For navigation and routing between pages.
-npm install react react-dom,
-npm install react-router-dom.
+
+<b>npm install react react-dom</b>
+
+<b>npm install react-router-dom</b>
+
 •	Vite: For fast development and bundling.
-npm install vite.
+
+<b>npm install vite</b>
+
 •	Firebase: For authentication, database, and storage functionalities.
-npm install firebase.
+
+<b>npm install firebase</b>
+
 •	Leaflet: For map rendering and interaction.
-npm install leaflet.
+
+<b>npm install leaflet</b>
+
 •	React Icons: Provides a collection of icons for use in the application.
-npm install react-icons.
+
+<b>npm install react-icons</b>
 
 
 cd vite-project
-npm run dev
+
+<b>npm run dev</b>
